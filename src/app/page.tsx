@@ -6,6 +6,7 @@ import { HealthEcosystem } from '@/components/sections/HealthEcosystem'
 import { Hero } from '@/components/sections/Hero'
 import { LifestyleSections } from '@/components/sections/LifestyleSections'
 import { PricingComparison } from '@/components/sections/PricingComparison'
+import { Testimonials } from '@/components/sections/Testimonials'
 import { TrustIndicators } from '@/components/sections/TrustIndicators'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
@@ -19,6 +20,7 @@ export default function Home() {
         <TrustIndicators />
         <Features />
         <LifestyleSections />
+        <Testimonials />
         <PricingComparison />
         <HealthEcosystem />
         <DashboardPreview />

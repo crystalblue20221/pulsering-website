@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
+import { NewsletterSignup } from '@/components/forms/NewsletterSignup'
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
 
@@ -36,7 +37,7 @@ export function Footer() {
   return (
     <footer className="bg-[#0a0a0f] text-white pt-16 pb-8">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <span className="text-2xl font-bold">
@@ -111,6 +112,9 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="lg:col-span-2">
+            <NewsletterSignup />
           </div>
         </div>
 
