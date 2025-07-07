@@ -1,9 +1,11 @@
+import { Benefits } from '@/components/sections/Benefits'
 import { CTA } from '@/components/sections/CTA'
 import { DashboardPreview } from '@/components/sections/DashboardPreview'
 import { FAQ } from '@/components/sections/FAQ'
 import { Features } from '@/components/sections/Features'
 import { HealthEcosystem } from '@/components/sections/HealthEcosystem'
 import { Hero } from '@/components/sections/Hero'
+import { HowItWorks } from '@/components/sections/HowItWorks'
 import { LifestyleSections } from '@/components/sections/LifestyleSections'
 import { PricingComparison } from '@/components/sections/PricingComparison'
 import { Testimonials } from '@/components/sections/Testimonials'
@@ -19,6 +21,8 @@ export default function Home() {
         <Hero />
         <TrustIndicators />
         <Features />
+        <HowItWorks />
+        <Benefits />
         <LifestyleSections />
         <Testimonials />
         <PricingComparison />
