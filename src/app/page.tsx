@@ -9,6 +9,7 @@ import { Hero } from '@/components/sections/Hero'
 import { HowItWorks } from '@/components/sections/HowItWorks'
 import { LifestyleSections } from '@/components/sections/LifestyleSections'
 import { PricingComparison } from '@/components/sections/PricingComparison'
+import { ProductComparison } from '@/components/sections/ProductComparison'
 import { TechSpecs } from '@/components/sections/TechSpecs'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { TrustIndicators } from '@/components/sections/TrustIndicators'
@@ -27,6 +28,7 @@ export default function Home() {
         <Benefits />
         <LifestyleSections />
         <Testimonials />
+        <ProductComparison />
         <PricingComparison />
         <TechSpecs />
         <HealthEcosystem />
