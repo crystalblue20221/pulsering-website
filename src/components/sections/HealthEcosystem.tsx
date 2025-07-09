@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const products = [
   {
@@ -12,6 +13,18 @@ const products = [
     buttonText: 'Learn More',
     buttonVariant: 'primary',
     bgColor: 'from-purple-500/20 to-indigo-500/20',
+    link: '/products/pulse-ring',
+    linkType: 'product',
+  },
+  {
+    name: 'Health Tracker Bracelets',
+    description: 'Stylish bracelets with advanced health monitoring capabilities.',
+    image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    buttonText: 'Shop Now',
+    buttonVariant: 'primary',
+    bgColor: 'from-pink-500/20 to-purple-500/20',
+    link: '/products/health-bracelets',
+    linkType: 'product',
   },
   {
     name: 'Health App',
@@ -20,6 +33,8 @@ const products = [
     buttonText: 'Download',
     buttonVariant: 'accent',
     bgColor: 'from-blue-500/20 to-cyan-500/20',
+    link: '/products/health-app',
+    linkType: 'product',
   },
   {
     name: 'Sleep Analysis',
@@ -28,6 +43,8 @@ const products = [
     buttonText: 'Explore',
     buttonVariant: 'primary',
     bgColor: 'from-indigo-500/20 to-blue-500/20',
+    link: '/infographics/sleep-analysis',
+    linkType: 'infogram',
   },
   {
     name: 'Nutrition Tracker',
@@ -36,6 +53,28 @@ const products = [
     buttonText: 'Get Started',
     buttonVariant: 'accent',
     bgColor: 'from-green-500/20 to-emerald-500/20',
+    link: '/infographics/nutrition-tracker',
+    linkType: 'infogram',
+  },
+  {
+    name: 'Premium Supplements',
+    description: 'High-quality supplements formulated to complement your health journey.',
+    image: 'https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    buttonText: 'Shop Collection',
+    buttonVariant: 'primary',
+    bgColor: 'from-amber-500/20 to-yellow-500/20',
+    link: '/products/supplements',
+    linkType: 'product',
+  },
+  {
+    name: 'Recipe Books',
+    description: 'Curated healthy recipes designed to fuel your body and mind.',
+    image: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    buttonText: 'Browse Books',
+    buttonVariant: 'accent',
+    bgColor: 'from-red-500/20 to-orange-500/20',
+    link: '/products/recipe-books',
+    linkType: 'product',
   },
 ]
 
@@ -53,7 +92,7 @@ export function HealthEcosystem() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div
               key={product.name}
@@ -63,22 +102,29 @@ export function HealthEcosystem() {
                 className={`absolute inset-0 bg-gradient-to-br ${product.bgColor} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
               ></div>
               <div className="relative p-6 flex flex-col h-full">
-                <div className="aspect-[16/9] relative rounded-xl overflow-hidden mb-6">
+                <Link href={product.link} className="block aspect-[16/9] relative rounded-xl overflow-hidden mb-6 group">
                   <Image
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                </div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-medium">
+                      {product.linkType === 'product' ? 'View Product' : 'View Infographic'}
+                    </span>
+                  </div>
+                </Link>
                 <h3 className="text-xl font-bold text-white mb-2">
                   {product.name}
                 </h3>
                 <p className="text-white/70 mb-6 flex-grow">
                   {product.description}
                 </p>
-                <Button variant={product.buttonVariant as any}>
-                  {product.buttonText}
+                <Button variant={product.buttonVariant as any} asChild>
+                  <Link href={product.link}>
+                    {product.buttonText}
+                  </Link>
                 </Button>
               </div>
             </div>

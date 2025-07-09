@@ -12,6 +12,7 @@ const navItems = [
   { name: 'Features', href: '#features' },
   { name: 'How It Works', href: '#how-it-works' },
   { name: 'Health Products', href: '#products' },
+  { name: 'Blog', href: '/blog' },
 ]
 
 export function Header() {

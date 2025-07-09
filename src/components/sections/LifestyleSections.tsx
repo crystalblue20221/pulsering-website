@@ -17,7 +17,7 @@ const lifestyleCategories = [
   {
     title: 'Business Professional',
     description:
-      'Stay connected and monitor your health discreetly during meetings. PulseRing's subtle notifications keep you informed without distractions.',
+      'Stay connected and monitor your health discreetly during meetings. PulseRing\'s subtle notifications keep you informed without distractions.',
     image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
     buttonText: 'Discover Features',
     buttonVariant: 'primary',

@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #0a0a0f;
   --foreground: #ffffff;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 15;
+  --background-end-rgb: 10, 10, 15;
 }
 
 @theme inline {
@@ -20,8 +26,13 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb));
   font-family: var(--font-sans);
 }
 
@@ -77,4 +88,63 @@ html {
 .animate-fade-in-delay-3 {
   animation: fadeIn 0.6s ease-out 0.6s forwards;
   opacity: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Blog post typography styles */
+.prose {
+  @apply text-white/80;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-white mt-10 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-bold text-white mt-8 mb-3;
+}
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose ul, .prose ol {
+  @apply mb-6 pl-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose ul {
+  @apply list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}
+
+.prose strong {
+  @apply text-white font-semibold;
+}
+
+.prose a {
+  @apply text-[#8b5cf6] hover:text-[#a78bfa] transition-colors;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-[#8b5cf6]/50 pl-4 italic my-6;
+}
+
+.prose img {
+  @apply rounded-lg my-8;
+}
+
+.prose hr {
+  @apply border-white/10 my-8;
 }

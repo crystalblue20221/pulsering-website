@@ -43,7 +43,7 @@ const faqs = [
   {
     question: 'How do I return or exchange my PulseRing?',
     answer:
-      'We offer a 30-day satisfaction guarantee. If you're not completely satisfied, you can return your PulseRing for a full refund or exchange it for a different size. Simply contact our customer support team to initiate the process.',
+      'We offer a 30-day satisfaction guarantee. If you\'re not completely satisfied, you can return your PulseRing for a full refund or exchange it for a different size. Simply contact our customer support team to initiate the process.',
   },
 ]
 

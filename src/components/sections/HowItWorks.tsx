@@ -22,7 +22,7 @@ const steps = [
   {
     title: 'Get Health Insights',
     description:
-      'Receive personalized health insights and recommendations based on your data. PulseRing's AI analyzes your metrics to provide actionable advice.',
+      'Receive personalized health insights and recommendations based on your data. PulseRing\'s AI analyzes your metrics to provide actionable advice.',
     icon: Zap,
     color: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
