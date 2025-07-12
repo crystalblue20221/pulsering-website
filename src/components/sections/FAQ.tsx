@@ -62,8 +62,8 @@ export function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-white/70 text-lg">
-            Everything you need to know about PulseRing. Can't find the answer
-            you're looking for? Contact our support team.
+            Everything you need to know about PulseRing. Can&apos;t find the answer
+            you&apos;re looking for? Contact our support team.
           </p>
         </div>
 

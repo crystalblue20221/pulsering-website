@@ -5,9 +5,9 @@ import { Activity, Heart, Moon, Zap } from 'lucide-react'
 
 const features = [
   {
-    name: 'Sleep Quality',
+    name: 'Sleep Apnea Detection',
     description:
-      'Advanced sleep tracking monitors your REM cycles, deep sleep, and overall sleep quality to help you optimize your rest.',
+      'Advanced sleep apnea pattern recognition helps you understand breathing interruptions and sleep quality issues—no medical claims.',
     icon: Moon,
     color: 'bg-gradient-to-br from-purple-500 to-indigo-600',
   },
@@ -26,9 +26,9 @@ const features = [
     color: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
   {
-    name: 'Health Insights',
+    name: 'Helpful Insights',
     description:
-      'AI-powered analysis of your health data to provide actionable insights and early warning signs of potential health issues.',
+      'Comprehensive health data analysis focused on sleep patterns and trends—no medical claims.',
     icon: Zap,
     color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
   },
@@ -46,7 +46,7 @@ export function Features() {
             Smart Health Tracking in a Sleek Design
           </h2>
           <p className="text-white/70 text-lg">
-            PulseRing gives you what matters most—health insights, in a ring that's as stylish as it is revolutionary.
+            PulseRing gives you what matters most—health insights, in a ring that&apos;s as stylish as it is revolutionary.
           </p>
         </div>
 

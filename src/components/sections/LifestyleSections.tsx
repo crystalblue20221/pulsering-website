@@ -8,7 +8,7 @@ const lifestyleCategories = [
   {
     title: 'Active Lifestyle',
     description:
-      'Perfect for fitness enthusiasts, PulseRing tracks your workouts, heart rate, and recovery to optimize your training and performance.',
+      'Monitor your daily movement with automatic detection of walking, running, and step counting. Tracks distance and activity patterns to complement your overall health insights. *Note: Hand movements (typing or cooking) may occasionally affect step accuracy.',
     image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
     buttonText: 'Learn More',
     buttonVariant: 'primary',
@@ -26,16 +26,16 @@ const lifestyleCategories = [
   {
     title: 'Sleep Optimization',
     description:
-      'Improve your sleep quality with detailed insights about your sleep patterns, cycles, and disturbances to wake up feeling refreshed.',
+      'Comprehensive sleep analysis with focus on breathing patterns and disturbances. Track sleep cycles, heart rate variations, and interruptions to identify potential sleep apnea episodes and optimize your rest quality.',
     image: 'https://images.unsplash.com/photo-1531353826977-0941b4779a1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
     buttonText: 'Sleep Better',
     buttonVariant: 'primary',
     imagePosition: 'left',
   },
   {
-    title: 'Social Connection',
+    title: 'Family Health Sharing',
     description:
-      'Stay connected with loved ones with subtle notifications and emergency alerts, ensuring peace of mind for you and your family.',
+      'Keep loved ones informed with real-time health monitoring. Share heart rate data and sleep patterns remotely with family members, enabling quick response to potential emergencies or health concerns.',
     image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
     buttonText: 'Connect Now',
     buttonVariant: 'primary',

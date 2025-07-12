@@ -6,7 +6,7 @@ import { Battery, Clock, Shield, Smile } from 'lucide-react'
 const benefits = [
   {
     title: 'Long Battery Life',
-    description: 'Enjoy 5+ days of continuous use on a single charge, so you can focus on your health, not charging your device.',
+    description: 'Extended battery life designed for multi-day use, so you can focus on your health without frequent charging.',
     icon: Battery,
     color: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
@@ -71,13 +71,13 @@ export function Benefits() {
               </h3>
               <p className="text-white/70 mb-6">
                 PulseRing is water-resistant, durable, and comfortable enough to
-                wear 24/7. Whether you're working out, sleeping, or attending a
+                wear 24/7. Whether you&apos;re working out, sleeping, or attending a
                 business meeting, PulseRing seamlessly integrates into your lifestyle.
               </p>
               <ul className="space-y-2">
                 {[
                   'Water-resistant up to 100m',
-                  'Scratch-resistant titanium construction',
+                  'Premium titanium and steel construction options - durable, scratch-resistant materials built for everyday wear',
                   'Lightweight design (4-6 grams)',
                   'Available in multiple sizes and finishes',
                 ].map((item, index) => (
@@ -89,14 +89,12 @@ export function Benefits() {
             </div>
             <div className="bg-gradient-to-br from-[#8b5cf6]/20 to-[#3b82f6]/20 p-8 rounded-xl">
               <blockquote className="text-white/90 italic">
-                "PulseRing has revolutionized how we think about wearable health
-                technology. Its combination of elegant design and powerful health
-                insights makes it a game-changer in the industry."
+                "Sleep apnea affects millions, yet most wearables treat it as a secondary feature. PulseRing puts it front and center."
               </blockquote>
               <div className="mt-4 flex items-center">
                 <div className="h-0.5 w-8 bg-[#8b5cf6] mr-3"></div>
                 <p className="text-white font-medium">
-                  Health Tech Magazine
+                  Sleep Wellness Advocate
                 </p>
               </div>
             </div>

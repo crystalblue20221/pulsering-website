@@ -7,35 +7,35 @@ import { useState } from 'react'
 const testimonials = [
   {
     content:
-      "PulseRing has completely changed how I monitor my health. As someone who's always been health-conscious but hated wearing bulky watches, this ring is the perfect solution. The sleep tracking is incredibly accurate!",
+      "PulseRing has completely changed how I monitor my health. As someone who&apos;s always been health-conscious but hated wearing bulky watches, this ring is the perfect solution. The sleep tracking is incredibly accurate!",
     author: 'Sarah J.',
     role: 'Fitness Instructor',
     rating: 5,
   },
   {
     content:
-      "I've tried several health wearables, but PulseRing stands out for its comfort and battery life. I barely notice I'm wearing it, and I only need to charge it once a week. The health insights have helped me make meaningful changes to my lifestyle.",
+      "I&apos;ve tried several health wearables, but PulseRing stands out for its comfort and battery life. I barely notice I&apos;m wearing it, and I only need to charge it once a week. The health insights have helped me make meaningful changes to my lifestyle.",
     author: 'Michael T.',
     role: 'Business Executive',
     rating: 5,
   },
   {
     content:
-      "As someone with a heart condition, I wanted a discreet way to monitor my heart rate. PulseRing not only looks stylish but provides me with accurate readings and alerts. It's given both me and my family peace of mind.",
+      "As someone with a heart condition, I wanted a discreet way to monitor my heart rate. PulseRing not only looks stylish but provides me with accurate readings and alerts. It&apos;s given both me and my family peace of mind.",
     author: 'Robert K.',
     role: 'Retired Teacher',
     rating: 5,
   },
   {
     content:
-      "The sleep tracking on PulseRing is far more accurate than any other device I've tried. I've been able to identify patterns affecting my sleep quality and make adjustments that have significantly improved my rest.",
+      "The sleep tracking on PulseRing is far more accurate than any other device I&apos;ve tried. I&apos;ve been able to identify patterns affecting my sleep quality and make adjustments that have significantly improved my rest.",
     author: 'Emma L.',
     role: 'Healthcare Professional',
     rating: 4,
   },
   {
     content:
-      "I love that PulseRing doesn't look like a medical device. It's elegant enough to wear to business meetings but powerful enough to track all my health metrics. The app interface is intuitive and provides actionable insights.",
+      "I love that PulseRing doesn&apos;t look like a medical device. It&apos;s elegant enough to wear to business meetings but powerful enough to track all my health metrics. The app interface is intuitive and provides actionable insights.",
     author: 'David M.',
     role: 'Tech Entrepreneur',
     rating: 5,
@@ -73,7 +73,7 @@ export function Testimonials() {
             What Our Customers Say
           </h2>
           <p className="text-white/70 text-lg">
-            Don't just take our word for it. See what our customers have to say
+            Don&apos;t just take our word for it. See what our customers have to say
             about their PulseRing experience.
           </p>
         </div>

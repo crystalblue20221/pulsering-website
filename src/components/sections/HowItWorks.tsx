@@ -20,9 +20,9 @@ const steps = [
     color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
   },
   {
-    title: 'Get Health Insights',
+    title: 'Review Sleep Data',
     description:
-      'Receive personalized health insights and recommendations based on your data. PulseRing\'s AI analyzes your metrics to provide actionable advice.',
+      'View your sleep apnea patterns and trends through easy-to-read charts and summaries—no medical claims, just helpful data.',
     icon: Zap,
     color: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
@@ -38,7 +38,7 @@ export function HowItWorks() {
           </h2>
           <p className="text-white/70 text-lg">
             Getting started with PulseRing is simple. Just follow these three
-            easy steps to begin your health transformation journey.
+            easy steps to begin tracking your sleep patterns.
           </p>
         </div>
 

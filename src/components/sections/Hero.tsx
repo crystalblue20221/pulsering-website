@@ -12,22 +12,18 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
           <div className="space-y-12">
             <div className="inline-flex items-center rounded-full bg-[#8b5cf6]/20 px-3 py-1 text-sm text-[#8b5cf6]">
-              <span className="font-medium">Next-Gen Wearable</span>
+              <span className="font-medium">Sleep Apnea Detection</span>
             </div>
             
             <div className="space-y-4">
-              <h1 className="text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-extrabold text-white tracking-tighter leading-none font-satoshi">
-                Your Health, <br />
-                Right at Hand
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tighter leading-none font-satoshi">
+                Sleep Apnea Detection <span className="text-[#8b5cf6]">+</span> No Monthly Fees <span className="text-[#8b5cf6]">=</span> <br />
+                Peace of Mind
               </h1>
-              <p className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white/90 font-satoshi">
-                No Bulky <span className="text-[#8b5cf6]">PulseRing</span> Watches Required
+              <p className="text-lg lg:text-xl font-medium tracking-tight text-white/90 font-montserrat">
+                Meet PulseRing, the sleek ring that detects sleep apnea patterns and provides actionable insights—all with no recurring fees.
               </p>
             </div>
-            
-            <p className="text-xl text-white/80 max-w-2xl font-montserrat mt-8">
-              Meet PulseRing, the sleek ring that tracks your health and keeps you connected—discreetly.
-            </p>
             
             <div className="flex flex-wrap gap-4 pt-6">
               <Button size="lg" className="text-lg px-8 py-6">Shop Now</Button>
